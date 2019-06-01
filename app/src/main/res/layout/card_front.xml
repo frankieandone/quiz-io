@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <androidx.cardview.widget.CardView
+            android:id="@+id/cv_question"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="@dimen/radius_card"
+            android:layout_margin="@dimen/margin_normal"
+            android:padding="@dimen/padding_normal"
+            >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_normal"
+                android:padding="@dimen/padding_normal"
+                android:text="@string/type_question"
+                style="@style/TypeOverlay"
+                />
+        <TextView
+                android:id="@+id/tv_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                style="@style/QuestionText"
+                android:padding="@dimen/padding_normal"
+                android:text="What is an Application?"
+                />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

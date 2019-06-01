@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">QuizIO</string>
+    <string name="type_question">Q:</string>
+    <string name="type_answer">A:</string>
 </resources>

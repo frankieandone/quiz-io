@@ -9,4 +9,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TypeOverlay">
+        <item name="android:textSize">72sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="QuestionText">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AnswerText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
 </resources>
