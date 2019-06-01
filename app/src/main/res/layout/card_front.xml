@@ -30,7 +30,7 @@
                 android:layout_gravity="center"
                 style="@style/QuestionText"
                 android:padding="@dimen/padding_normal"
-                android:text="What is an Application?"
+                android:text="DUMMY_QUESTION"
                 />
     </androidx.cardview.widget.CardView>
 </FrameLayout>

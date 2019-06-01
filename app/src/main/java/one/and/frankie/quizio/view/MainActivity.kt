@@ -2,7 +2,10 @@ package one.and.frankie.quizio.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.fragment.app.Fragment
+import androidx.viewpager2.widget.ViewPager2
 import one.and.frankie.quizio.R
+import one.and.frankie.quizio.model.QA
 
 class MainActivity : AppCompatActivity() {
     private lateinit var cardFragment: CardFragment
