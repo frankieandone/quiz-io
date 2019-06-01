@@ -15,6 +15,11 @@ class CardFragment : Fragment() {
     private lateinit var flipOutAnim: AnimatorSet
     private lateinit var cardFront: View
     private lateinit var cardBack: View
+    private val doubleClickListener = object : DoubleClickListener() {
+        override fun onDoubleClick() {
+            flipCard()
+        }
+    }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val rootView = inflater.inflate(R.layout.fragment_card, container, false)
@@ -26,9 +31,7 @@ class CardFragment : Fragment() {
         val scale = resources.displayMetrics.density * distance
         cardFront.cameraDistance = scale
         cardBack.cameraDistance = scale
-        rootView.setOnClickListener {
-            flipCard()
-        }
+        rootView.setOnClickListener(doubleClickListener)
         return rootView
     }
 
