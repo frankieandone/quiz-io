@@ -3,4 +3,7 @@
     <dimen name="padding_normal">8dp</dimen>
     <dimen name="margin_normal">8dp</dimen>
     <dimen name="radius_card">8dp</dimen>
+    <dimen name="line_height_normal">40dp</dimen>
+    <dimen name="line_spacing_extra_normal">6dp</dimen>
+    <dimen name="padding_answer_end">64dp</dimen>
 </resources>

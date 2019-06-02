@@ -3,4 +3,8 @@
     <string name="type_question">Q:</string>
     <string name="type_answer">A:</string>
     <string name="error_text">Failed to fetch data</string>
+    <string name="dummy_answer">DUMMY_ANSWER</string>
+    <string name="dummy_question">DUMMY_QUESTION</string>
+    <string name="more">More</string>
+    <string name="less">Less</string>
 </resources>

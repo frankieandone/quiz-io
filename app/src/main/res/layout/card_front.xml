@@ -6,31 +6,53 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
+
     <androidx.cardview.widget.CardView
             android:id="@+id/cv_question"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            card_view:cardCornerRadius="@dimen/radius_card"
             android:layout_margin="@dimen/margin_normal"
             android:padding="@dimen/padding_normal"
+            card_view:cardCornerRadius="@dimen/radius_card"
             >
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin_normal"
-                android:padding="@dimen/padding_normal"
-                android:text="@string/type_question"
-                style="@style/TypeOverlay"
-                />
-        <TextView
-                android:id="@+id/tv_question"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                style="@style/QuestionText"
-                android:padding="@dimen/padding_normal"
-                android:text="DUMMY_QUESTION"
-                />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout"
+                >
+
+            <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:layout_constraintTop_toTopOf="parent"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    android:layout_margin="@dimen/margin_normal"
+                    android:padding="@dimen/padding_normal"
+                    android:text="@string/type_question"
+                    style="@style/TypeOverlay"
+                    />
+
+            <TextView
+                    android:id="@+id/tv_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_margin="@dimen/margin_normal"
+                    android:padding="@dimen/padding_normal"
+                    android:text="@string/dummy_question"
+                    card_view:lineHeight="@dimen/line_height_normal"
+                    android:lineSpacingExtra="@dimen/line_spacing_extra_normal"
+                    android:lineSpacingMultiplier="2.5"
+                    style="@style/QuestionText"
+                    android:layout_marginTop="8dp"
+                    card_view:layout_constraintTop_toBottomOf="@+id/textView"
+                    card_view:layout_constraintVertical_bias="0.25"
+                    />
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </FrameLayout>

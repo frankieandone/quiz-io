@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/padding_answer_end"
+            >
+        <TextView
+                android:id="@+id/tv_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="@dimen/margin_normal"
+                android:padding="@dimen/padding_normal"
+                android:text="@string/dummy_answer"
+                app:lineHeight="@dimen/line_height_normal"
+                android:lineSpacingExtra="@dimen/line_spacing_extra_normal"
+                android:lineSpacingMultiplier="2.5"
+                style="@style/AnswerText"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/efab_expand_less"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_margin="@dimen/margin_normal"
+            app:backgroundTint="@color/primaryLightColor"
+            android:text="@string/less"
+            android:textColor="@color/primaryTextColor"
+            app:icon="@drawable/ic_expand_less"
+            app:iconTint="@color/primaryTextColor"
+            />
+</FrameLayout>
